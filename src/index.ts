@@ -6,9 +6,9 @@ const app = express();
 
 
 
-app.get(req, res) => {
-  res.send('Hello, World!');
-};
+app.get('/', (req, res) => {
+  res.send('<h1>Hello, World!</h1>');
+});
 
 
 
