@@ -9,7 +9,7 @@
     "start": "nodemon src/index.ts",
     "jasmine": "jasmine",
     "lint": "tslint 'src/index.ts'",
-    "prettier": "prettier --config .prettierrc '*.js' --write"
+    "prettier": "prettier --config .prettierc './src/**/*.ts' --write"
   },
   "author": "Jason Donmoyer",
   "license": "ISC",

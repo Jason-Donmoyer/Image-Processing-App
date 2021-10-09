@@ -1,12 +1,12 @@
 import express from 'express';
 
 const app = express();
+const port: number = 3000;
 
 
 
 
-
-app.get('/', (req, res) => {
+app.get('/', (req: express.Request, res: express.Response): void => {
   res.send('<h1>Hello, World!</h1>');
     console.log('sent');
 });
@@ -14,6 +14,6 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(3000, () => {
-  console.log('Server is listening very carefully');
+app.listen(port, () => {
+  console.log(`Server is listening very carefully on port ${port}.`);
 });
